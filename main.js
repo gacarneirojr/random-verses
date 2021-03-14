@@ -33,6 +33,4 @@ let randomVerse  = (verses) => {
     return `The selected passage is ${verses[verseNumber]}`
 }
 
-let picAVerse = randomVerse(bibleVerses);
-
-console.log(picAVerse);
+document.getElementById('verse').innerHTML = randomVerse(bibleVerses);
